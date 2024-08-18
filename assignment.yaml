@@ -1,0 +1,5 @@
+# PROJECT OVERVIEW
+This project entails a CloudFormation template that creates :
+- VPC with two public subnets
+- Auto Scaling group of Windows EC2 instances
+- S3 bucket
