@@ -199,7 +199,7 @@ Create a yaml file, to configure the resources:
 - Navigate to the CloudFormation dashboard within the AWS Management Console, choose "Create stack" and select "Choose an existing template." Choose "Upload a template file," and then click "Choose file" to select your YAML file from its saved location. 
 - After uploading, enter a stack name, configure any additional settings as needed, and review the details. Finally, click "Create stack" to start the creation process
 - Monitor the progress until the stack status changes from "CREATE_IN_PROGRESS" to "CREATE_COMPLETE," indicating that all resources have been successfully created as in the image below.
-![CREATE_COMPLETEScreenshot](/Assignment/Screenshot%201.png)
+![CREATE_COMPLETEScreenshot](/Screenshot%201.png)
 
 
 
