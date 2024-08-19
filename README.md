@@ -1,7 +1,7 @@
 # PROJECT OVERVIEW
 
 This project entails creation of a  CloudFormation template that provisions the following resources:
-- A Virtual Private Cloud (VPC0 with two public subnets
+- A Virtual Private Cloud (VPC) with two public subnets
 - Auto Scaling group of Windows EC2 instances
 - S3 bucket
 
@@ -154,7 +154,7 @@ Create a yaml file, to configure the resources:
 
 7. Set the Auto scaling Group with the following properties:
 - The Auto Scaling Group is named Assignment-AutoScaling-Group.
-- Reference the earlier created Launch Template
+- Reference the earlier created Launch Template, and set '!GetAtt LaunchTemplate.LatestVersionNumber', to ensure that the Auto Scaling Group launches instances according to the latest configuration in the launch template.
 - Scaling configuration: 1 minimum number of instances, 3 maximum number of instances, and 2 number of instances to be maintained by the Auto Scaling Group.
 - VPCZoneIdentifier: The Auto Scaling Group is configured to launch instances in the two public subnets, PublicSubnet1 and Public Subnet2
 - Configure Tags to name the Auto Scaling Group  and set PropagateAtLaunch: true.
